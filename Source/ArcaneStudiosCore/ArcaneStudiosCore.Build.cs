@@ -12,7 +12,8 @@ public class ArcaneStudiosCore: ModuleRules
             "GameplayAbilities",
             "GameplayTasks",
             "EnhancedInput",
-            "GameplayTags"
+            "GameplayTags",
+            "UMG"
         });
 
         PrivateDependencyModuleNames.AddRange(new string[] 

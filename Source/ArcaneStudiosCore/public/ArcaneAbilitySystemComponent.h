@@ -16,6 +16,5 @@ public:
 	UArcaneAbilitySystemComponent();
 
 protected:
-
 	
 };
