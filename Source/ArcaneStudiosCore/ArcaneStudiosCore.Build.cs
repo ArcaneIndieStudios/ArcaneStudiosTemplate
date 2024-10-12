@@ -13,13 +13,17 @@ public class ArcaneStudiosCore: ModuleRules
             "GameplayTasks",
             "EnhancedInput",
             "GameplayTags",
-            "UMG"
+            "UMG",
+            "CommonUI",
+            "CommonInput"
         });
 
         PrivateDependencyModuleNames.AddRange(new string[] 
         {
             "CoreUObject",
-            "Engine"
+            "Engine",
+            "Slate",
+            "SlateCore",
         });
     }
 }
