@@ -8,17 +8,6 @@
 			"Name": "ArcaneStudiosTemplate",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
-		},
-		{
-			"Name": "ArcaneStudiosCore",
-			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine",
-				"GameplayAbilities",
-				"UMG",
-				"CommonUI"
-			]
 		}
 	],
 	"Plugins": [
