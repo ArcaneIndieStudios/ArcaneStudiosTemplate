@@ -2,11 +2,33 @@
 
 #include "ArcaneBaseCharacter.h"
 #include "ArcaneAbilitySystemComponent.h"
+#include "Components/GameFrameworkComponentManager.h"
 
 AArcaneBaseCharacter::AArcaneBaseCharacter()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
+}
+
+void AArcaneBaseCharacter::PreInitializeComponents()
+{
+	Super::PreInitializeComponents();
+
+	UGameFrameworkComponentManager::AddGameFrameworkComponentReceiver(this);
+}
+
+void AArcaneBaseCharacter::BeginPlay()
+{
+	UGameFrameworkComponentManager::SendGameFrameworkComponentExtensionEvent(this, UGameFrameworkComponentManager::NAME_GameActorReady);
+
+	Super::BeginPlay();
+}
+
+void AArcaneBaseCharacter::EndPlay(const EEndPlayReason::Type EndPlayReason)
+{
+	UGameFrameworkComponentManager::RemoveGameFrameworkComponentReceiver(this);
+
+	Super::EndPlay(EndPlayReason);
 }
 
 UAbilitySystemComponent* AArcaneBaseCharacter::GetAbilitySystemComponent() const

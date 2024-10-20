@@ -9,13 +9,14 @@ public class ArcaneStudiosCore: ModuleRules
         PublicDependencyModuleNames.AddRange(new string[]
         {
             "Core",
+            "ModularGameplay",
             "GameplayAbilities",
             "GameplayTasks",
             "EnhancedInput",
             "GameplayTags",
             "UMG",
             "CommonUI",
-            "CommonInput"
+            "CommonInput",
         });
 
         PrivateDependencyModuleNames.AddRange(new string[] 

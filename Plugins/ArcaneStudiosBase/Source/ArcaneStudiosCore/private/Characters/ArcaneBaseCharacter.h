@@ -19,6 +19,9 @@ class ARCANESTUDIOSCORE_API AArcaneBaseCharacter : public ACharacter, public IAb
 
 public:
 	AArcaneBaseCharacter();
+	virtual void PreInitializeComponents() override;
+	virtual void BeginPlay() override;
+	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
 
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	virtual UArcaneAttributeSet* GetAttributeSet() const;

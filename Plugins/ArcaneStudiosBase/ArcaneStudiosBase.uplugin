@@ -34,11 +34,11 @@
 	],
 	"Plugins": [
 		{
-			"Name": "GameFeatures",
+			"Name": "ModularGameplay",
 			"Enabled": true
 		},
 		{
-			"Name": "ModularGameplay",
+			"Name": "GameFeatures",
 			"Enabled": true
 		},
 		{
