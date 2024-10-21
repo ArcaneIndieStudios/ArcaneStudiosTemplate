@@ -26,6 +26,9 @@ public:
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	virtual UArcaneAttributeSet* GetAttributeSet() const;
 
+	DECLARE_MULTICAST_DELEGATE(FAttributesInitialized)
+	FAttributesInitialized AttributesInitialized;
+
 protected:
 	void GiveDefaultAbilities();
 	void InitDefaultAttributes() const;

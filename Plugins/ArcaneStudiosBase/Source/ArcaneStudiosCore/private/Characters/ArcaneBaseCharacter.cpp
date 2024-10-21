@@ -7,7 +7,6 @@
 AArcaneBaseCharacter::AArcaneBaseCharacter()
 {
 	PrimaryActorTick.bCanEverTick = true;
-
 }
 
 void AArcaneBaseCharacter::PreInitializeComponents()
